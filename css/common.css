@@ -1,0 +1,705 @@
+@charset 'utf-8';
+
+/* reset */
+* {margin:0;padding:0; vertical-align:middle;}
+html, body {width:100%; height:100%; min-width:980px; font-family:tahoma,"Malgun Gothic","맑은고딕",sans-serif; font-size:12px; color:#222; line-height:18px;}
+img {border:0}
+ol, ul, ul li, ol li {list-style:none;}
+a {text-decoration:none; cursor:pointer; color:#222;}
+a:hover {color:#0181c8}
+caption, legend, .hidden {visibility:hidden; width:0px; height:0px; margin:0; padding:0; background:none; font-size:0; line-height:0; overflow:hidden;}
+:focus {outline:0;}
+fieldset	{border:0 none;}
+
+/*	Style	*/
+.alignLeft	{text-align:left!important}
+.alignCenter	{text-align:center!important}
+.alignRight	{text-align:right!important}
+.alignTop	{vertical-align:top!important}
+.alignMiddle	{vertical-align:middle!important}
+.alignBottom	{vertical-align:bottom!important}
+.leftSide	{float:left; text-align:left;}
+.rightSide	{float:right; text-align:right;}
+.wordBreakNormal	{word-break:normal;}
+.clear	{clear:both;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*	input	*/
+select,input[type="checkbox"]	{cursor:pointer;}
+input[type="text"], input[type="password"], input[type="search"], input[type="file"],.formDropdown	{-webkit-appearance:none;-moz-appearance:none;appearance:none;}
+select::-ms-expand {display:none;}
+textarea	{resize:none; padding:5px; border:1px solid #949494; border-color:#949494 #d0d0d0 #d0d0d0 #949494;}
+.formText	{padding:0 5px; min-height:26px; background:#fff; border:1px solid #949494; border-color:#949494 #d0d0d0 #d0d0d0 #949494; line-height:26px;}
+.formText.disable	{background:#e4e4e4;}
+.formDropdown	{line-height:24px; height:28px; border:1px solid #949494; border-color:#949494 #d0d0d0 #d0d0d0 #949494; background:url("https://ticketimage.pyeongchang2018.com/ctp/img/input_select.gif") #fff 100% 50% no-repeat; padding-right:30px; padding-left:2px;}
+.formDropdown	{padding-right:0\9; background:0 none\9;}
+input :: - ms-clear	{visibility:hidden; display:none;}
+
+/*	table	*/
+table	{background:#fff; width:100%; border-spacing:0; border-collapse:collapse; empty-cells:show;}
+table th:first-child, table td:first-child	{padding-left:10px;}
+.scrollTableHeadWrap table th:first-child,.scrollTableWrap table td:first-child	{padding-left:10px;}
+.leftMargintNoneTable.scrollTableHeadWrap table th:first-child,.leftMargintNoneTable.scrollTableWrap table td:first-child	{padding-left:5px;}
+
+.modalLayer table th:first-child, .modalLayer table td:first-child	{padding-left:10px;}
+.scrollTableHeadWrap.brTableHead table th:first-child	{padding-left:10px;}
+.leftMargintNoneTable.scrollTableHeadWrap.brTableHead table th:first-child	{padding-left:5px;}
+
+
+table th	{padding:7px 5px; font-weight:normal; text-align:left; line-height:14px; vertical-align:middle; background:#fff; color:#000;}
+table td	{padding:7px 5px; text-align:left; word-break:break-all; color:#000; line-height:16px; vertical-align:middle;}
+
+.scrollTableHeadWrap table th	{height:16px;background:#4e4e4e; color:#fff; }
+.scrollTableHeadWrap table th *	{vertical-align:middle;}
+.scrollTableHeadWrap table th .font11size	{vertical-align:bottom;}
+.scrollTableHeadWrap.brTableHead table th	{height:24px; padding:4px 5px; line-height:12px;}
+.scrollTableHeadWrap.pendingTableHead th	{height:24px; padding:4px 5px; line-height:12px;}
+
+.scrollTableHeadWrap table th a	{color:#fff;}
+.scrollTableHeadWrap table th a:hover	{color:#40c6ff;}
+.scrollTableHeadWrap table th input	{vertical-align:middle;}
+.scrollTableWrap table td	{/*padding:6px 5px;*/ vertical-align:top; border-top:1px solid #909090; line-height:16px;}
+.scrollTableWrap table tr:first-child td	{border-top:0 none;}
+.scrollTableWrap table tr.odd td {background:#f5f7f8}
+
+.modalLayer table th	{background:#e7e7e7;border-bottom:1px solid #d0d0d0; color:#000;}
+.modalLayer table td	{border-bottom:1px solid #d0d0d0;}
+
+.scrollTableWrap {overflow-y:scroll; border-bottom:1px solid #909090;}
+.modalLayer .scrollTableWrap	{border-bottom:1px solid #999;}
+
+.scrollxyTableWrap	{overflow-x:scroll; overflow-y:scroll;}
+
+.scrollTableFootWrap th,.scrollTableFootWrap td	{background:#fff; color:#000;border-top:0 none; border-bottom:1px solid #999;padding:8px 5px; font-size:14px; font-weight:bold;}
+
+
+table.miniTable th	{border-top:2px solid #999; border-bottom:1px solid #999; padding:5px 5px; text-align:right;}
+table.miniTable td	{text-align:right;}
+table.miniTable th:first-child, table.miniTable td:first-child	{padding-left:5px; text-align:left;}
+
+table.miniTable.type01 td	{border-bottom:1px solid #dbe1e5;}
+table.miniTable.type01 tr.odd td	{background:#f7f9f9}
+
+table.miniTable.type02 tbody tr:first-child td	{padding-top:5px;}
+table.miniTable.type02 td	{padding:2px 5px;}
+table.miniTable.type03 tbody tr:first-child td	{padding-top:5px;}
+table.miniTable.type03 td	{padding:2px 5px;}
+
+.selectRecipientPopup	{margin-left:-410px; margin-top:-246px;}
+.searchWrap	{width:250px; float:left; overflow:hidden; font-size:13px;}
+.searchWrap > ul	{margin-top:10px; border:1px solid #d0d0d0;height:272px; overflow-y:scroll;}
+.searchWrap ul li	{line-height:30px;}
+.searchWrap ul li p	{padding-left:30px; cursor:pointer;background:url("https://ticketimage.pyeongchang2018.com/ctp/img/ico_item.gif") 10px 0% no-repeat;}
+.searchWrap ul li p.on	{background:url("https://ticketimage.pyeongchang2018.com/ctp/img/ico_item.gif") #e0e6e9 10px 100% no-repeat;}
+.searchWrap ul li p.open	{background:url("https://ticketimage.pyeongchang2018.com/ctp/img/ico_item.gif") #fff 10px 100% no-repeat;}
+.searchWrap ul li p	{border-top:1px solid #d0d0d0;}
+.searchWrap ul li:first-child p	{border-top:0 none;}
+.searchWrap ul li ul	{display:none;}
+.searchWrap ul li ul li	{cursor:pointer;padding-left:55px;}
+.searchWrap ul li ul li.on	{background:#e0e6e9}
+
+.selectBtnWrap	{padding:0 20px; width:100px; float:left;}
+.selectedItem	{float:right; width:390px;}
+
+.selectBtnWrap	{margin-top:102px;}
+.selectBtnWrap li	{margin-bottom:10px;}
+.selectBtnWrap a.btnStyle	{/*font-weight:normal;*/ padding:5px 0; width:100%;}
+.selectBtnWrap a img	{margin-left:10px;}
+.textSearch input[type="text"]	{/*margin:0;*/width:173px;}
+.textSearch	a.btnStyle	{/*margin-left:4px;*/height:24px;/*font-size:13px;*/ line-height:26px}
+
+.textSearch	{overflow:hidden}
+.textSearch .formText	{float:left;}
+.textSearch a	{float:right;}
+
+.selectRecipientPopup .btnUnderWrap	{width:780px;clear:both;padding:15px 0 0;}
+
+.selectedItem	{margin-top:38px;}
+.selectedItemHead	{border:1px solid #d0d0d0;}
+.selectedItemHead th	{border:none;padding:0 10px;color:#222;line-height:30px;background:#eee}
+.selectedItemHead th:first-child	{padding:0 10px;}
+.selectedItem .scrollTableWrap	{height:244px; overflow-y:scroll;margin-top:-1px;border:1px solid #ddd;}
+.selectedItem .scrollTableWrap tr.on td	{background:#e0e6e9}
+.selectedItem .scrollTableWrap td	{padding:0 10px;line-height:30px; cursor:pointer; border-bottom:1px solid #ddd;}
+
+
+
+.doubleTableWrap table td.casTd.on,.pendingTableWrap table td.casTd.on	{background:#fff url("https://ticketimage.pyeongchang2018.com/ctp/img/ico_submit_b.gif") no-repeat 50% 10px;}
+.doubleTableWrap table tr.odd td.casTd.on,.pendingTableWrap table tr.odd td.casTd.on	{background:#f5f7f8 url("https://ticketimage.pyeongchang2018.com/ctp/img/ico_submit_b.gif") no-repeat 50% 10px;}
+
+
+
+.doubleTableWrap	{position: relative;}
+.doubleTableWrap table	{background:none;}
+.doubleTableWrap table th	{background:none;border:none;padding:10px 0; margin:0; font-weight:normal;border-top:1px solid #ddd;}
+
+.doubleTableWrap table td	{background:none;padding:5px;border:none; border-top:1px solid #909090;}
+
+.tableInfo	{clear:both; overflow:hidden; padding-top:15px;}
+.tableInfo p	{float:left; font-size:13px; color:#666;}
+
+
+
+/*	header	*/
+header	{width:980px;margin:15px auto; height:70px; position:relative;}
+header h1	{float:left;}
+.skipNav	{visibility:hidden; position:absolute; top:0; right:0;}
+.icoAlert	{background:#ee334e; color:#fff; font-weight:bold; padding:0 5px;border-radius:50px; display:inline-block; line-height:16px;zoom:1; *display:inline; }
+
+
+
+
+header .messageContainer	{float:right; margin-top:38px;}
+.messageContainer li	{display:inline-block;zoom:1; *display:inline; vertical-align:middle;}
+.messageContainer .icoAlert	{margin-right:5px; font-size:11px;}
+.messageContainer .welcomeMap	{font-size:12px; cursor:default}
+.messageContainer .welcomeDate	{margin-right:20px;color:#0081c8; cursor:default}
+.messageContainer .welcomeName	{font-size:13px; cursor:pointer; text-decoration:underline; text-align:right;}
+.messageContainer .welcomeName	{text-overflow:ellipsis; overflow:hidden; white-space:nowrap; width:430px;}
+.messageContainer li a.textBtn	{height:18px; line-height:18px; border-radius:10px;}
+.messageContainer li a.textBtn img	{margin-left:5px;}
+
+/*	navigation	*/
+nav	{clear:both;width:100%; background:url(https://ticketimage.pyeongchang2018.com/ctp/img/bg_gnb.jpg) #0060ad 50% 0% no-repeat; height:34px;}
+nav *	{-webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box;}
+nav a	{display:block; height:100%;}
+nav > ul	{width:980px; margin:0 auto; text-align:center; font-size:0;}
+nav > ul > li	{display:inline-block; zoom:1; *display:inline; position:relative; font-size:15px; height:34px; line-height:34px;}
+nav p a	{color:#fff; padding:0 38px;}
+nav ul li p.gnbHere a	{background:url(https://ticketimage.pyeongchang2018.com/ctp/img/btn_gnb_on.gif) 100% 100% no-repeat; color:#fff;}
+nav p a:hover,nav p.on a	{background:url(https://ticketimage.pyeongchang2018.com/ctp/img/bg_gnbover.gif) #004b84 0% 0% no-repeat;color:#fff;}
+nav ul li ul	{display:none;position:absolute; top:29px; left:0; background:#fff; box-shadow:3px 3px 3px #666; text-align:left;z-index:1; width:115%; padding:4px 0 23px 20px;}
+nav ul li ul li	{font-size:13px; line-height:12px; border-bottom:1px solid #ccc;}
+nav ul li ul li a	{padding-top:15px;}
+body.kr nav ul li ul li a	{padding-top:12px; padding-bottom:3px;}
+nav ul li ul li a:hover	{color:#004b84;}
+nav ul li ul li a:hover	{color:#0081c8; font-weight:bold;}
+
+
+
+
+
+
+
+
+.lineTitle	{border-bottom:1px solid #ddd; margin-bottom:20px; padding:0;}
+
+/*	openform	*/
+.openForm 	{overflow:hidden; position:relative;height:28px;padding:10px 20px; margin-bottom:15px; background:#fff;}
+.openForm .leftSide	{/*width:840px;*/width:780px;}
+.openForm .rightSide	{position:absolute; bottom:10px;right:20px;}
+.openForm .rightSide a	{width:70px; margin-top:5px; margin-left:0;}
+.openForm .rightSide a img	{/*margin-bottom:2px;*/}
+.openForm .rightSide li:first-child a img	{margin-bottom:0;}
+.openForm .formSelectWrap	{}
+.formSelectWrap fieldset	{/*line-height:28px;*//*display:inline-block;zoom:1; *display:inline;*/ float:left;margin-right:10px; vertical-align:top; margin-bottom:10px;}
+.formSelectWrap label	{display:block;}
+.openmenuReset	{display:none;}
+.btnFiltermore	{position:absolute; bottom:7px;right:120px;/*clear:both;*/font-size:0px;/* width:334px; height:20px;*/ text-indent:-9999px;width:47px; height:14px;background:url(https://ticketimage.pyeongchang2018.com/ctp/img/btn_more.gif) 100% 0% no-repeat; cursor:pointer; /*margin:0 auto 20px;*/}
+.btnFiltermore.on	{background-position:100% 100%;}
+
+.openForm.line2.on	{height:66px;}
+.openForm.line3.on	{height:104px;}
+.openForm.line4.on	{height:142px;}
+
+
+.alertWrap	{display:none;position:absolute; padding:20px;height:220px; border:1px solid #75838f; background:#fff; z-index:11; right:0px; top:73px; line-height:18px;}
+
+.alertWrap	.alertListClose {position:absolute; top:20px; right:20px;}
+.alertWrap .imgPiece	{position:absolute; top:0; margin-top:-13px; right:103px;}
+.alertWrap h4	{float:left; margin-right:8px;font-size:16px;}
+.alertWrap h4 span	{font-size:12px; margin-left:10px;}
+.alramNumWrap	{float:left;font-weight:normal;margin-top:2px;}
+.alramNumWrap p.contentNum	{font-size:11px;margin-top:-1px}
+.alertWrap h4 img	{vertical-align:bottom; margin-right:5px; margin-bottom:3px;}
+.alertWrap ul	{clear:both;background:url("https://ticketimage.pyeongchang2018.com/ctp/img/bg_alram.png") 5px 0% no-repeat;overflow-y:scroll; width:460px; height:195px;padding-top:5px;font-size:12px;}
+.alertWrap ul li	{padding-left:15px;margin-top:10px;background:url("https://ticketimage.pyeongchang2018.com/ctp/img/dot_alram.png") 3px 6px no-repeat;}
+.alertWrap ul li p.date	{color:#666;}
+.alertWrap ul li p.alertTitle {width:420px; height:18px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;}
+.alertWrap ul li span.colorRed	{margin-left:3px;font-size:11px;}
+
+/*	layout	*/
+.firstContainer	{padding-top:20px}
+.bgWrap	{background:#eaeef0; overflow:hidden;}
+.contentWrap	{margin:0 auto; width:980px;}
+.contentWrap:after	{display:block;clear:both;content:""}
+.contentWrap section:after	{display:block;clear:both;content:""}
+.contentWrap section	{background:#fff;}
+
+
+
+
+
+
+/*	160118 TOP new	*/
+.topContainer	{float:right; text-align:right; margin-top:20px;}
+
+
+.timeContainer li	{margin-bottom:5px;display:inline-block;zoom:1; *display:inline;}
+.timeContainer .welcomeMap	{cursor:default}
+.timeContainer .welcomeDate	{color:#0081c8; cursor:default}
+
+header .nameContainer	{clear:both;float:right;}
+header .nameContainer *	{vertical-align:top;}
+.nameContainer li	{display:inline-block;zoom:1; *display:inline;}
+.nameContainer .icoAlert	{width:18px;font-size:11px; text-align:center;}
+.nameContainer .welcomeAlert	{width:35px; margin-top:3px;}
+.nameContainer .welcomeName	{font-size:13px; cursor:pointer; width:380px;text-decoration:underline;text-overflow:ellipsis; overflow:hidden; white-space:nowrap; margin-top:1px;}
+.nameContainer li a.textBtn	{height:18px; line-height:18px; border-radius:10px;}
+.nameContainer li a.textBtn img	{margin-left:5px;}
+
+.logoutWrap	{margin-top:2px;font-size:13px; text-decoration:underline; padding-left:15px; margin-left:15px;background: url("https://ticketimage.pyeongchang2018.com/ctp/img/updateBg.gif") left 3px no-repeat;}
+
+
+
+
+.gnbUserInfoBox	{display:none;position:absolute; padding:20px; width:460px; /*height:165px;*/ border:1px solid #666; background:#fff; z-index:11; right:0; top:73px;}
+.gnbUserInfoBox	.gnbUserInfoClose {text-align:right; vertical-align:top; font-size:0px; line-height:0px;}
+.gnbUserInfoBox .imgPiece	{position:absolute; top:0; margin-top:-14px; right:122px;}
+.gnbUserInfoBox.ctpBoxWrap .imgPiece	{right:122px;}
+.gnbUserInfoBox.ctpBoxWrap	{top:73px;}
+
+.gnbUserInfoBox ul li	{display:block;height:32px;line-height:32px; vertical-align:baseline;}
+.gnbUserInfoBox ul li span.formTitle	{margin-bottom:0; width:150px; display:inline-block;zoom:1; *display:inline;vertical-align:baseline;}
+.gnbUserInfoBox ul li a	{text-decoration:underline;}
+.gnbUserInfoBox .formDropdown	{width:307px; vertical-align:baseline;float:right;}
+.gnbUserInfoBox .btnWrap	{text-align:right;font-size:13px; padding-top:11px; border-top:1px solid #d0d0d0; margin-top:15px;}
+.gnbUserInfoBox .btnWrap a	{text-decoration:underline; margin-left:20px;}
+.gnbUserInfoBox .btnWrap a:first-child	{visibility:hidden;}
+.welcomeAlert	{cursor:pointer;background:url(https://ticketimage.pyeongchang2018.com/ctp/img/img_alram.gif) no-repeat 8px 2px; padding-left:15px;}
+.gnbUserInfoBox.atpBoxWrap	{height:165px;}
+.gnbUserInfoBox.atpBoxWrap ul li	{height:40px;line-height:40px;}
+
+
+
+/* footer */
+footer	{clear:both; border-top:1px solid #ddd; width:980px; margin:10px auto 40px;}
+footer a.policyLink	{text-decoration:underline;}
+footer a.goTop	{}
+
+
+
+/*	modal popup	*/
+.modalBg {display:none; position:fixed; top:0px; left:0px; z-index:10; width:100%; height:100%; background:#000; opacity: 0.8;filter: alpha(opacity=80);}
+.modalBg.transparent {opacity: 0;filter: alpha(opacity=0);}
+
+.modalLayer {display:none; position:fixed; top:50%; left:50%; z-index:11; border-top:7px solid #0181c8; background:#fff; padding:30px 20px;}
+.modalLayer h3 {height:auto;font-size:18px; font-weight:bold; padding:0px 0px 20px;}
+.modalLayer .layerClose {position:absolute; top:30px; right:20px;}
+.modalLayer .layerClose2 {position:absolute; top:30px; right:20px;}
+
+.modalLayer .privacyClose {position:absolute; top:30px; right:20px;}
+
+.popupTable	{margin:10px 0 15px;}
+
+.confirmPopup	{margin-left:-264px; width:488px; margin-top:-90px; }
+.confirmPopup ul	{padding-top:15px;}
+.confirmPopup ul li	{float:left; margin-right:4px;}
+.confirmPopup.logBox	{margin-top:-206px;}
+.confirmPopup.logBox .uploadInfo p	{font-weight:bold;margin-top:10px; line-height:20px; overflow-y:auto; background:#fff;height:102px;}
+
+.unsubmitConfirm	{margin-top:-196px;}
+.unsubmitConfirm .formText	{display:block; width:476px; margin-top:20px;margin-bottom:0;}
+
+
+
+.popupBtn	{overflow:hidden; }
+.popupBtn li	{float:left; margin-right:4px;}
+.popupBtn li a	{}
+
+.uploadPopup	{width:480px; margin-left:-260px;/* height:126px; */margin-top:-88px;}
+.uploadPopup .fileUpWrap	{margin-top:10px;}
+.uploadPopup .fileUpWrap .formText	{width:260px;}
+.uploadPopup .fileUpWrap a	{vertical-align:middle;padding:4px 0; width:98px;}
+
+.requestSavePopup	{width:500px;margin-left:-270px;margin-top:-183px;}
+.requestSavePopup th,.requestSavePopup td	{}
+
+.requestSavePopup th	{}
+.requestSavePopup .scrollTableHeadWrap	{margin-top:10px;}
+.requestSavePopup .scrollxyTableWrap	{width:100%; height:132px;margin-bottom:15px}
+
+.requestSavePopup.changeInfo	{width:600px;margin-left:-320px;margin-top:-160px;}
+.requestSavePopup.changeInfo .scrollTableWrap	{height:123px; overflow-y:scroll}
+.requestSavePopup.changeInfo th,.requestSavePopup.changeInfo th	{text-align:left;}
+.requestSavePopup.changeInfo .scrollTableWrap td	{text-align:left}
+.requestSavePopup.changeInfo p	{margin:15px 0 0; text-align:right;}
+.requestSavePopup.changeInfo p.leftSide,.requestSavePopup.changeInfo p.rightSide	{margin-bottom:0;}
+.requestSavePopup.changeInfo label	{ margin-left:5px;}
+
+.newAllocationPopup	{width:500px;margin-left:-270px;margin-top:-162px;}
+
+/*.newAllocationPopup th	{background:#fff;border-top:2px solid #999; border-bottom:1px solid #999; color:#222;}*/
+.newAllocationPopup .scrollTableWrap	{width:100%; height:123px;margin-bottom:15px}
+
+/*.requestTable tr:first-child td	{border-top:0 none;}*/
+/* 151104 */
+.returnYNclass	{font-size:12px; margin-bottom:15px;}
+
+.requestSavePopupFix	{width:500px;margin-left:-270px;margin-top:-146px;}
+/*.requestSavePopupFix th	{border-top:0 none;}*/
+.requestSavePopupFix th,.requestSavePopupFix td	{/*font-size:13px;*/text-align:right;/*padding:5px 10px;*/}
+.requestSavePopupFix th.alignLeft,.requestSavePopupFix td.alignLeft	{text-align:left;}
+
+.requestSavePopupFix .scrollxyTableWrap	{width:100%; height:132px;margin-bottom:15px}
+.requestSavePopupFix th:first-child,.requestSavePopupFix tr td:first-child	{text-align:left;padding-left:10px;}
+.requestSavePopupFix tfoot tr td {/*color: #ee334e;*/ font-weight: bold; border-bottom: 1px solid #999;}
+
+
+.finalConfirmation th,.finalConfirmation td	{/*font-size:13px;*/text-align:right;/*padding:5px 10px;*/}
+.finalConfirmation th.alignLeft,.finalConfirmation td.alignLeft	{text-align:left;}
+
+
+.finalConfirmation th:first-child,.finalConfirmation tr td:first-child	{text-align:left;padding-left:10px;}
+.finalConfirmation tfoot tr td {/*color: #ee334e;*/ font-weight: bold; border-bottom: 1px solid #999;}
+
+
+
+
+
+.filePreview	{width:480px; margin-left:-260px;  margin-top:-309px;}
+.importfile	{clear:both;padding-top:20px;}
+.importfile h4	{font-size:14px; font-weight:normal;}
+.importfile .scrollTableWrap 	{width:100%; max-height:209px;/* margin-bottom:15px;*/}
+.popupTableHead	{margin-top:10px;}
+.popupTableHead.doubleLineHead	{}
+
+
+
+
+.importfile table th,.importfile table td	{text-align:left;}
+/*.importfile table td	{padding:7px 5px;}*/
+
+.filePreview .nameInputWrap	{margin-top:30px;}
+.filePreview .nameInputWrap label	{margin-right:5px;}
+.filePreview .nameInputWrap .formText	{width:353px;}
+.importMessage	{border:1px solid #d0d0d0; padding:20px; height:317px;overflow-y:auto; margin-top:10px;}
+/* 151104 */
+/*.filePreview .rightSide	{margin-top:15px;}*/
+
+.uploadInfo {font-size:13px; overflow:hidden}
+.uploadInfo .popupTableHead th	{/*background:#fff; color:#222;border-top:2px solid #999; border-bottom:1px solid #999; text-align:left;*/}
+/*.uploadInfo .scrollxyTableWrap td	{text-align:left; border-bottom:1px solid #909090;}*/
+.uploadInfo #ImportFileName	{width:282px;}
+.uploadInfo .checkBox	{margin-right:5px;}
+.uploadInfo label	{}
+.uploadInfo ul	{padding:15px 0 0; overflow:hidden}
+.uploadInfo ul li	{float:left;margin-left:4px;}
+.uploadInfo ul li:first-child	{margin-left:0;}
+
+.addSessionPopup	{margin-left:-490px; margin-top:-335px;width:940px;}
+.addSessionPopup .formSelectWrap	{margin-top:5px;width:450px;}
+.addSessionPopup .formSelectWrap li	{clear:both; margin-bottom:10px; overflow:hidden}
+
+.addSessionPopup .formSelectWrap label,.addSessionPopup  .formSelectWrap .formTitle	{float:left; width:105px;margin-top:6px}
+.addSessionPopup .formSelectWrap select.formDropdown	{width:345px;}
+.addSessionPopup .formSelectWrap .formText	{float:left;width:333px;}
+.addSessionPopup .formSelectWrap.rightSide	{padding-left:30px;}
+.addSessionPopup .popupBtnWrap	{clear:both; float:right; margin:0 0 20px;}
+.addSessionPopup .popupBtnWrap li	{float:left; margin-left:4px;}
+.addSessionPopup .popupBtnWrap li:first-child a img	{margin-bottom:0;}
+.addSessionPopup .popupBtnWrap li a.btn_middle_extra	{padding:4px 14px;}
+.addSessionsTable	{clear:both;font-size:12px; margin:0 0 15px}
+.addSessionsTable input[type="checkbox"]	{/*margin-right:5px;*/}
+.addSessionsTable .scrollxyTableWrap	{width:100%; height:286px;}
+.addSessionsTable .scrollxyTableWrap td	{vertical-align:top;word-break:normal; border:0 none; border-bottom:1px solid #ddd;}
+.deleteConfirm	{margin-left:-264px; margin-top:-146px; width:488px;}
+.deleteConfirm ul	{padding-top:15px;}
+.deleteConfirm ul li	{float:left;margin-right:4px;}
+.deleteConfirm p.colorRed	{margin-top:8px;}
+.deleteConfirm .inputWrap {margin-top:15px;}
+.deleteConfirm .inputWrap label	{display:inline; vertical-align:middle;margin-right:10px;}
+.deleteConfirm .inputWrap input	{width:404px;display:inline; margin:0;}
+
+.privacyPolicyPopup	{margin-top:-204px;margin-left:-264px; width:488px;}
+.privacyPolicyPopup .contentsWrap	{/*overflow-y:scroll;*/ /*width:100%; height:450px; */border:1px solid #ddd; margin-bottom:15px; padding:15px 20px; line-height:24px;}
+.privacyPolicyPopup .contentsWrap p	{text-align:right; margin-top:10px;}
+.privacyPolicyPopup label	{margin-left:5px;}
+
+
+
+/*	151028	*/
+/*tr.odd th,tr.odd td	{background:#f5f7f8}*/
+
+
+
+/*	151113	selectbox	*/
+.selectBasic	{width:150px;}
+.selectBasicLong	{width:250px;}
+.formText.selectBasicLong	{width:238px;}
+.formText.selectBasic	{width:148px;}
+.selectDouble	{width:320px;}
+.selectTriple	{width:588px;}
+.selectBasicEx	{width:200px;}
+.selectMini	{width:112px;}
+
+.selectHalf	{width:404px;}	/*	1/2	*/
+.selectFull	{width:818px;}
+.selectOneThird	{width:266px;}	/* 1/3	*/
+.selectOneThird2	{width:542px;}	/* 2/3	*/
+.selectQuarter	{width:197px;}	/*	1/4	*/
+.selectQuarter3	{width:611px;}	/*	3/4	*/
+
+.formSelectWrap.leftSide fieldset .formDropdown.selectQuarterEx	{width:233px;}
+
+
+th.scrollHeadLast	{padding-right:17px;}
+
+
+.buttonStyle	{cursor:pointer;text-align:center;display:inline-block;zoom:1; *display:inline;font-size:13px; color:#fff;width:100px;height:28px;border:1px solid #ccc;
+padding:4px 14px;line-height:18px;vertical-align:middle;}
+
+.buttonStyle.btn_middle_default	{background:url("https://ticketimage.pyeongchang2018.com/ctp/img/bg_btn.gif") #0065ac 0% 0% repeat;
+	border-color:#4891b4 #4891b4 #35789f #4891b4}
+.buttonStyle.btn_middle_default:hover	{border-width:2px 0 0 2px; background:#326e88;border-color:#061b2e #326e88 #326e88 #061b2e;}
+.buttonStyle.btn_middle_primary	{background:url("https://ticketimage.pyeongchang2018.com/ctp/img/bg_btn.gif") #60aecb 0% 50% repeat;
+	border-color:#0071c0 #0071c0 #0058a4 #0071c0}
+.buttonStyle.btn_middle_primary:hover	{border-width:2px 0 0 2px; background:#005e9a;border-color:#061b2e #005e9a #005e9a #061b2e;}
+
+
+
+.buttonStyle img	{margin-right:5px; margin-left:-5px;vertical-align:middle; margin-bottom:2px;}
+
+
+/*	151127	*/
+.multiCheckWrap	{padding:0px 10px 5px; width:296px;border:1px solid #949494; border-color:#949494 #d0d0d0 #d0d0d0 #949494; overflow-y:scroll; height:154px; /*margin-bottom:10px; */}
+.multiCheckWrap ul li	{font-size:12px;display:block; margin-right:0;line-height:24px;height:24px; margin-top:5px;overflow:hidden; text-overflow:ellipsis; width:300px; white-space:nowrap;}
+.multiCheckWrap li label	{display:inline;}
+.formSelectWrap .multiCheckWrap label	{margin-left:5px; display:inline;}
+.multiCheckWrap .groupAllCheck	{border-bottom:1px solid #d0d0d0; padding:5px 0; margin-bottom:5px;}
+
+
+/*	151204 error page	*/
+.errorPageWrap	{width:980px; padding:0 20px; margin:0 auto; margin-top:175px;}
+.errorPageWrap header	{overflow:hidden; height:70px; margin-bottom:80px;}
+.errorPageWrap header h1	{float:left; margin:0;}
+.errorPageWrap header h2	{float:left;margin-top:30px; margin-left:15px;}
+.errorPageWrap header .lineDeco	{background:#0f88cb; height:3px; width:888px;float:left; margin-top:49px; margin-left:20px;}
+
+.errorPageWrap .errorMessage	{clear:both; height:335px; border-bottom:1px solid #d1d1d1;}
+.errorPageWrap .errorMessage h3	{font-size:20px; margin-bottom:20px; font-weight:normal; padding:0;}
+.errorPageWrap .errorMessage h4	{font-size:13px; font-weight:normal; line-height:20px; margin-bottom:20px;}
+
+.errorPageWrap .errorMessage ul	{padding-top:9px;}
+.errorPageWrap .errorMessage li	{float:left; margin-right:4px;}
+.errorPageWrap .errorMessage a	{width:106px;font-size:13px; display:block;color:#fff;height:18px;background:url("https://ticketimage.pyeongchang2018.com/ctp/img/bg_btn.gif") #60aecb 0% 50% repeat;
+	border-color:#0071c0 #0071c0 #0058a4 #0071c0;
+padding:5px 15px;line-height:18px;vertical-align:middle;}
+	.errorPageWrap .errorMessage a:hover	{border-width:2px 0 0 2px; background:#005e9a;border-color:#061b2e #005e9a #005e9a #061b2e;}
+
+
+
+/*	151217	*/
+.colorBgWrap	{background:url("https://ticketimage.pyeongchang2018.com/ctp/img/bg_home.jpg") #0096dc 50% 0% no-repeat; overflow:hidden;}
+
+/*	tab	*/
+.tabWrap	{clear:both; width:980px; margin:20px auto 10px;border-bottom:1px solid #a8a8a8;}
+.tabWrap:after	{display:block;clear:both;content:""}
+
+.tabTitle	{float:left;}
+.tabTitle li	{float:left; height:34px;line-height:34px; font-size:14px; text-align:center;}
+.tabTitle li a	{display:block; min-width:160px; padding:0 20px; height:100%;background:#d0d6d8;border-bottom:1px solid #a8a8a8; color:#000;}
+.tabTitle li.on a	{background:#fff;font-weight:bold; border:1px solid #a8a8a8; border-bottom:0 none;}
+.tabContentWrap	{clear:both;background:#fff;}
+
+.tabContent	{width:980px; margin:0 auto;clear:both; overflow:hidden}
+.tabWrap .allSum p	{/*margin-top:12px;*/}
+.tabWrap .allSum ul	{/*margin-top:6px;*/}
+
+.tabWrap p.info	{float:left; line-height:26px; margin-left:10px;}
+/*	160112	*/
+.tabWrap .rightSide li	{float:left;}
+.tabWrap .rightSideWrap	{float:right;/*margin-top:5px;*/line-height:32px;}
+.tabWrap .rightSideWrap label	{margin-left:5px;}
+
+
+/*	151228	*/
+.guideBgWrap	{background:#eaeef0;}
+.guideBgWrap .contentWrap	{position:relative;}
+
+
+.btnShowmore	{display:none;}
+
+.limitLine	{display:block; text-overflow:ellipsis; overflow:hidden; white-space:nowrap;}
+
+
+
+/* 160104 placeholder	*/
+.placeholderWrap	{position:relative;}
+.placeholderWrap label	{display:block; position:absolute; top:0; left:0; padding-left:5px;height:28px;width:100%; box-sizing:border-box; line-height:30px;visibility:visible; cursor:text;color:#aaa;
+-ms-user-select: none; 
+-moz-user-select: -moz-none;
+-khtml-user-select: none;
+-webkit-user-select: none;
+user-select: none;
+}
+.placeholderWrap.off label	{visibility:hidden;}
+
+/*	160104 모두 업데이트 이후 정리 및 삭제	*/
+.allocationWrap .openForm label,.allocationWrap .openForm .formTitle	{display:none;}
+.clientWrap label, .clientWrap .formTitle	{display:none;}
+.userList label, .userList .formTitle	{display:none;}
+.sessionForm label, .sessionForm .formTitle	{display:none;}
+.openForm.requestForm  label,.openForm.requestForm .formTitle	{display:none;}
+.openForm.requestAtpForm  label,.openForm.requestAtpForm .formTitle	{display:none;}
+.resourceWrap .resourceSearch label,.resourceWrap .resourceSearch .formTitle	{display:none;}
+.openForm.browseSession label,.openForm.browseSession .formTitle	{display:none;}
+
+
+.allocationWrap .openForm .placeholderWrap label	{display:block;}
+.clientWrap .placeholderWrap label	{display:block;}
+.userList .placeholderWrap label	{display:block;}
+.sessionForm .formSelectWrap .placeholderWrap label	{display:block;}
+.openForm.requestForm .placeholderWrap label	{display:block;}
+.openForm.requestAtpForm .placeholderWrap label	{display:block;}
+.resourceWrap .resourceSearch .placeholderWrap label	{display:block;}
+.openForm.browseSession .placeholderWrap label	{display:block;}
+
+/*	160101 체크박스 라디오버튼 디자인 변경*/
+
+.inputStyleWrap {position: relative;}
+.inputStyleWrap input {position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); border:0}
+.inputStyleWrap input + label {cursor:pointer; display:inline-block;zoom:1; *display:inline; position:relative;  -webkit-user-select:none;  -moz-user-select:none;  -ms-user-select:none;}
+.inputStyleWrap input + label:before {width:16px; height:16px; content: ' ';  display:inline-block;zoom:1; *display:inline; vertical-align: middle; line-height:16px; margin: -2px 5px 0 0;}
+
+.inputStyleWrap input[type="checkbox"] + label:before {background:url("https://ticketimage.pyeongchang2018.com/ctp/img/input_check.gif") 0% 0% no-repeat;}
+.inputStyleWrap input[type="radio"] + label:before {background:url("https://ticketimage.pyeongchang2018.com/ctp/img/input_radio.gif") 0% 0% no-repeat;}
+.inputStyleWrap input[type="checkbox"]:checked + label:before {background-position:100% 100%}
+.inputStyleWrap input[type="radio"]:checked + label:before {background-position:100% 100%}
+
+.inputStyleWrap input:disabled + label 	{ cursor:default;opacity: 0.7;filter: alpha(opacity=70);}
+.inputStyleWrap input:disabled + label:before 	{opacity: 0.7;filter: alpha(opacity=70);}
+.inputStyleWrap input:disabled + label 	{cursor:default!important;}
+
+
+.inputStyleWrap.marginRightInput input + label	{margin-right:20px;}
+
+.filebox *	{vertical-align:top;}
+.filebox input[type="file"] {position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); border:0;}
+.filebox label {}/*
+.filebox .upload-name {padding:0 5px; min-height:26px; background:#fff; border:1px solid #949494; border-color:#949494 #d0d0d0 #d0d0d0 #949494;}*/
+
+/*	160113	*/
+.allocationListWrap .searchWrap	{width:176px; float:right;/* text-align:right;*/}
+/*.allocationListWrap .searchWrap .placeholderWrap label	{text-align:left;}*/
+.allocationListWrap .searchWrap .placeholderWrap input[type="text"]	{float:left;width:137px;border-right:0 none;}
+.allocationListWrap .searchWrap .placeholderWrap label	{width:137px;float:left;}
+.allocationListWrap .searchWrap .placeholderWrap button	{float:left; cursor:pointer; border:1px solid #d0d0d0; border-left:0 none; border-color:#949494 #d0d0d0 #d0d0d0 #fff; width:28px; height:28px; background:url("https://ticketimage.pyeongchang2018.com/ctp/img/btn_search.gif") 0% 50% no-repeat;}
+
+
+.scrollTableHeadWrap .thLastCell	{padding-right:22px;}
+.modalLayer.detailPopup th.thLastCell	{padding-right:22px;}
+
+/*	160114 selectbox width	*/
+.selectSegments	{width:290px;}
+.selectSessions	{width:340px;}
+.selectClients	{width:460px;}
+.selectStatus	{width:110px;}
+.selectDescriptions	{width:520px;}
+.selectDisciplines	{width:190px;}
+.selectVenues	{width:250px;}
+.selectClusters	{width:220px;}
+.selectDates	{width:110px;}
+.selectLevel	{width:90px;}
+.selectRequestType	{width:140px;}
+.selectUsers	{width:160px;}
+.selectActions	{}
+.selectFlags	{width:100px;}
+.selectGrades	{width:100px;}
+.selectSubmitted	{width:120px;}
+
+.calendarContainer span	{display:inline-block;zoom:1; *display:inline; text-align:center}
+
+/*	160114 popupstyle	*/
+.modalLayer .popupText	{margin-bottom:30px;}
+.modalLayer .popupSingleText	{font-size:14px;}
+.modalLayer .scrollTableWrap.confirmPopupTable	{max-height:92px;}
+
+.modalLayer .confirmList	{font-weight:bold;line-height:20px; overflow-y:auto; background:#fff;height:102px;}
+.modalLayer .tablePopupUnderBtn	{padding-top:15px; float:right;}
+.modalLayer .tablePopupUnderBtn li	{float:left; margin:0 0 0 4px}
+
+.modalLayer .popupUnderBtn	{padding-top:15px;}
+.modalLayer .popupUnderBtn li	{float:left; margin:0 4px 0 0;}
+
+
+.confirmListPopup	{margin-left:-264px; width:488px; margin-top:-197px; }
+.alertPopup	{margin-left:-264px; width:488px; margin-top:-90px; }
+
+.modalLayer.detailPopup	{width:590px;}
+.modalLayer.detailPopup th	{line-height:12px; padding:2px 5px;}
+
+.modalLayer.detailPopup table th:first-child, .modalLayer.detailPopup table td:first-child	{padding-left:5px;}
+
+.modalLayer.detailPopup td span.newIcon	{margin-left:5px;}
+
+.modalLayer.detailPopup.totalPendingTicket	{margin-top:-180px; margin-left:-315px;}
+
+.modalLayer.EditTransferPopup	{width:800px; margin-left:-420px; margin-top:-250px;}
+.modalLayer.EditTransferPopup .popupTopSelect	{clear:both; padding:10px 5px; border-top:1px solid #d0d0d0; border-bottom:1px solid #d0d0d0;}
+.modalLayer.EditTransferPopup .popupTopSelect label	{margin-right:4px;}
+.modalLayer.EditTransferPopup .scrollTableWrap	{height:260px;}
+.modalLayer.EditTransferPopup .scrollTableWrap td	{vertical-align:middle; padding:10px 5px;}
+.modalLayer.EditTransferPopup .scrollTableWrap td img	{margin-top:3px;}
+.modalLayer.EditTransferPopup .scrollTableWrap td .formDropdown	{height:20px;}
+.modalLayer.EditTransferPopup .scrollTableWrap td .formText	{text-align:right; width:40px;min-height:18px;}
+.modalLayer.EditTransferPopup .scrollTableWrap .selectLevel	{width:50px;}
+.modalLayer.EditTransferPopup .selectDisciplines	{width:120px;}
+.modalLayer.EditTransferPopup .scrollTableWrap .selectSessions	{width:180px;}
+
+.pointList .scrollTableWrap td	{cursor:pointer;}
+.pointList .scrollTableWrap tr:hover td	{color:#0081c8}
+
+
+.guideBtnWrap	{height:28px; margin-right:6px;}
+
+.userGuideText	{float:left; text-decoration:underline;}
+.userGuideText img	{vertical-align:top; margin:4px 3px 0 0;}
+
+.userGuideBox	{position:absolute; padding:20px; width:540px; border:1px solid #666; background:#fff; z-index:50; right:20px; top:74px;}
+.userGuideBox h3	{float:left; padding:0;}
+.userGuideBox .userGuideBoxClose {float:right;font-size:0px; line-height:0px;}
+.userGuideBox .imgPiece	{position:absolute; top:0; margin-top:-14px; right:66px;}
+.userGuideBox .guideTextWrap	{width:530px; border-top:1px solid #d0d0d0;border-bottom:1px solid #d0d0d0;overflow-y:scroll; padding-bottom:10px; line-height:20px; padding-right:10px;}
+.userGuideBox .guideTextWrap dt	{margin:10px 0 5px;font-weight:bold;}
+
+
+.topGuideWrap	{width:980px; left:50%; margin-left:-490px; position:absolute; top:158px;}
+.topGuideWrap .userGuideText	{float:right; margin-top:0;}
+.topGuideWrap .userGuideBox	{top:24px; right:0;}
+.topGuideWrap .userGuideBox ul	{margin-top:10px;}
+.topGuideWrap .userGuideBox ul li	{margin-bottom:5px;padding-left:8px;background:url("https://ticketimage.pyeongchang2018.com/ctp/img/dot_gray.gif") 0% 9px no-repeat;}
+
+.userGuideBox.reportGuide .imgPiece	{right:92px;}
+.userGuideBox.atpReportGuide .imgPiece	{right:92px;}
+.userGuideBox.ctpReportGuide .imgPiece	{right:92px;}
+
+.topGuideWrap .userGuideBox.reportGuide .guideTextWrap	{max-height:565px;}
+
+
+.topLinkWrap li	{display:inline-block;zoom:1; *display:inline; padding-left:15px;}
+.topLinkWrap li:first-child	{background: url("https://ticketimage.pyeongchang2018.com/ctp/img/updateBg.gif") right 3px no-repeat; padding-right:15px;}
+
+/*	160203 KOREAN	*/
+/*body.kr nav.ctpGnb p a	{padding:0 44px;}*/
+
+body.kr .btnFiltermore	{width:49px; background:url(https://ticketimage.pyeongchang2018.com/ctp/img/btn_more_kr.gif) 100% 0% no-repeat;}
+body.kr .btnFiltermore.on	{background-position:100% 100%;}
+
+
+.paginate	{text-align:center;}
+.paginate li	{display:inline-block; zoom:1; *display:inline; margin-top:15px;background: url("https://ticketimage.pyeongchang2018.com/ctp/img/updateBg.gif") left 3px no-repeat;}
+.paginate li:first-child	{background:0 none;}
+.paginate li a	{padding:5px 10px 5px 13px; }
+

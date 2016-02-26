@@ -1,33 +1,53 @@
 ﻿<!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<meta name="title" content="" />
-	<meta name="description" content="" />
-	<meta name="keywords" content="" />
-	<link rel="shortcut icon" type="image/x-icon" href="">
-	<link type ="text/css" href="" rel="stylesheet" />
+	<meta name="title" content="template" />
+	<meta name="description" content="template" />
+	<meta name="keywords" content="template" />
+<!--	<link rel="shortcut icon" type="image/x-icon" href="">	-->
+	<link type ="text/css" href="css/common.css" rel="stylesheet" />
 	<script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
-	<script type="text/javascript" src="" ></script>
+	<script type="text/javascript" src="js/common.js" ></script>
 	<!--[if lt IE 9]>
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
-	<title>GNB sample</title>
+	<title>template</title>
 </head>
 <body>
 <header>
-    <div class="goHomeLink">
-        <h1>GNB sample</h1>
-    </div>
+	<h1><a>TEMPLATE sample</a></h1>
 	<a href="#content" class="skipNav">SKIP</a>
-    <ul class="messageContainer">
-		<li class="welcomeName">Hello, <span>mirabelle</span> (<span>International New Company)</span></li>
-	</ul>
+	<div class="topContainer">
+		<ul class="timeContainer">
+			<li class="welcomeMap">Korea Standard Time</li>
+			<li class="welcomeDate" title="Korea Standard Time (UTC+09)">12/11/2016 11:11:57 (UTC+09)</li>
+		</ul>
+		<ul class="nameContainer">
+			<li class="welcomeName">Hello, <span>mirabelle</span> (<span>International New Company</span>)</li>
+			<li class="welcomeAlert"><a><span class="icoAlert">123</span></a></li>
+			<li class="logoutWrap"><a>Logout</a></li>
+		</ul>
+	</div>
+    <section class="alertWrap">
+		<p class="imgPiece"><img src="https://ticketimage.pyeongchang2018.com/ctp/img/piece_gnbbox.gif" alt=""></p>
+		<a class="alertListClose"><img src="https://ticketimage.pyeongchang2018.com/ctp/img/userLayerClose.gif" alt="Close"></a>
+		<h4><img src="https://ticketimage.pyeongchang2018.com/ctp/img/img_alram.gif" alt="Alarm">Alarm</h4>
+		<div class="alramNumWrap">
+			<p class="contentNum"><span class="colorRed">New <span id="_divAlarmNewCount2">1</span></span> / Total <span id="_divAlarmTotCount">1</span></p>
+		</div>	
+		<ul>
+			<li>
+				<p class="date">13/11/2015 17:07</p>
+				<p class="alertTitle"><a>[Session] Change in Session Schedule - OSB01</a></p>
+			</li>
+		</ul>
+	</section>
 	<div class="gnbUserInfoBox">
-		<p class="imgPiece"><img src="https://github.com/hejily/itpk/blob/master/piece_gnbbox.gif?raw=true" width="9" height="6" alt=""></p>
+		<p class="imgPiece"><img src="https://github.com/hejily/itpk/blob/master/img/img_gnbbox.gif?raw=true" width="9" height="6" alt=""></p>
 		<div class="gnbUserInfoClose">
-			<a><img src="https://github.com/hejily/itpk/blob/master/userLayerClose.gif?raw=true" alt="Close"></a>
+			<a><img src="https://github.com/hejily/itpk/blob/master/img/img_close.gif?raw=true" alt="Close"></a>
 		</div>
 		<ul>
 			<li>
@@ -55,7 +75,7 @@
 		</div>
 	</div>
 </header>
-<nav class="atpGnb">
+<nav>
 	<ul>
 		<li>
 			<p class="gnbHere"><a>Home</a></p>
@@ -94,6 +114,7 @@
         </li>
 	</ul>
 </nav>
+<div class="mainContainer" id="content"></div>
 <div class="modalBg transparent"></div>
 </body>
 </html>
