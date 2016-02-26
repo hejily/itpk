@@ -17,7 +17,7 @@
 </head>
 <body>
 <header>
-	<h1><a>TEMPLATE sample</a></h1>
+	<h1><a href="template.html">TEMPLATE sample</a></h1>
 	<a href="#content" class="skipNav">SKIP</a>
 	<div class="topContainer">
 		<ul class="timeContainer">
@@ -25,14 +25,48 @@
 			<li class="welcomeDate" title="Korea Standard Time (UTC+09)">12/11/2016 11:11:57 (UTC+09)</li>
 		</ul>
 		<ul class="nameContainer">
-			<li class="welcomeName"><a>Hello, <span>mirabelle</span> (<span>International New Company</span>)</a></li>
+			<li class="welcomeName"><a>Hello, <span>mirabelle</span> (<span>[99-INT] International New Company</span>)</a></li>
 			<li class="welcomeNotice"><a><span class="icoAlert">123</span></a></li>
 			<li class="logout"><a>Logout</a></li>
 		</ul>
 	</div>
+	<div class="gnbUserInfoBox" style="display:block">
+		<p class="imgPiece"><img src="https://github.com/hejily/itpk/blob/master/img/img_gnbbox.gif?raw=true" width="9" height="6" alt=""></p>
+		<div class="gnbUserInfoClose">
+			<a><img src="https://github.com/hejily/itpk/blob/master/img/img_close.gif?raw=true" alt="Close"></a>
+		</div>
+		<ul>
+			<li>
+				<span class="formTitle">Your Full Name</span>
+				<span class="formContent">mirabelle</span>
+			</li>
+			<li>
+				<fieldset>
+					<legend>Organisation</legend>
+					<label for="organisation">Your Organisation</label>
+					<select class="formDropdown" id="organisation" disabled="">
+						<option value="">[99-INT] International New Company</option>
+					</select>
+				</fieldset>
+			</li>			
+			<li>
+				<fieldset>
+					<legend>Channel</legend>
+					<label for="culture">Language</label>
+					<select class="formDropdown" id="culture">
+                        <option value="en-us">English</option>
+				        <option value="ko-kr">한국어 (Korean)</option>
+			        </select>
+				</fieldset>
+			</li>
+		</ul>
+		<div class="btnWrap">
+			<a>Help</a><a>Logout</a>
+		</div>
+	</div>
     <section class="alertWrap">
-		<p class="imgPiece"><img src="https://ticketimage.pyeongchang2018.com/ctp/img/piece_gnbbox.gif" alt=""></p>
-		<a class="alertListClose"><img src="https://ticketimage.pyeongchang2018.com/ctp/img/userLayerClose.gif" alt="Close"></a>
+		<p class="imgPiece"><img src="https://ticketimage.pyeongchang2018.com/ctp/img/piece_gnbbox.gif" width="9" height="6" alt=""></p>
+		<a class="alertListClose"><img src="https://ticketimage.pyeongchang2018.com/ctp/img/userLayerClose.gif" width="16" height="16" alt="Close"></a>
 		<h4><img src="https://ticketimage.pyeongchang2018.com/ctp/img/img_alram.gif" alt="Alarm">Alarm</h4>
 		<div class="alramNumWrap">
 			<p class="contentNum"><span class="colorRed">New <span id="_divAlarmNewCount2">1</span></span> / Total <span id="_divAlarmTotCount">1</span></p>
@@ -44,36 +78,7 @@
 			</li>
 		</ul>
 	</section>
-	<div class="gnbUserInfoBox">
-		<p class="imgPiece"><img src="https://github.com/hejily/itpk/blob/master/img/img_gnbbox.gif?raw=true" width="9" height="6" alt=""></p>
-		<div class="gnbUserInfoClose">
-			<a><img src="https://github.com/hejily/itpk/blob/master/img/img_close.gif?raw=true" alt="Close"></a>
-		</div>
-		<ul>
-			<li>
-				<span class="formTitle">Your Full Name</span>
-				<span class="formContent">master master</span>
-			</li>
-			<li>
-				<span class="formTitle">Your Organisation</span>
-				<span class="formContent">
-					<select class="formDropdown"><option>[01-GIT] International New Company </option></select>
-				</span>
-			</li>			
-			<li>
-				<span class="formTitle">Channel</span>
-				<span class="formContent">
-                    <select class="formDropdown" name="culture">
-                        <option value="en-us">English</option>
-				        <option value="ko-kr">Korean</option>
-			        </select>
-				</span>
-			</li>
-		</ul>
-		<div class="btnWrap">
-			<a>Help</a><a>Logout</a>
-		</div>
-	</div>
+
 </header>
 <nav>
 	<ul>
@@ -97,7 +102,7 @@
         </li>
         <li>
             <p><a>Management</a></p>
-            <ul class="gnbLongUl">
+            <ul>
                 <li><a>Session management</a></li>
                 <li><a>Quota management</a></li>
                 <li><a>Allocation management</a></li>
