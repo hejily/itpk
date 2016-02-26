@@ -38,10 +38,9 @@ header h1 a	{font-size:16px; font-weight:bold;}
 .timeContainer .welcomeDate	{color:#0081c8;}
 .nameContainer	{height:21px; line-height:21px;}
 .nameContainer li	{display:inline-block; zoom:1; *display:inline;}
-.nameContainer .welcomeNotice	{cursor:pointer;background:url("https://ticketimage.pyeongchang2018.com/ctp/img/img_alram.gif") no-repeat 8px 2px; padding-left:15px;}
 .nameContainer .welcomeName a	{height:21px; display:block; text-decoration:underline; width:380px; text-overflow:ellipsis; overflow:hidden; white-space:nowrap;}
 .nameContainer .welcomeName a span	{vertical-align:bottom;}
-.nameContainer .welcomeNotice	{}
+.nameContainer .welcomeNotice a	{background:url("https://github.com/hejily/itpk/blob/master/img/img_alram.gif?raw=true") no-repeat 0% 100%; padding-left:15px;}
 .logout a	{}
 
 
