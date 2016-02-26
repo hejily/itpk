@@ -8,7 +8,6 @@ ol, ul, ul li, ol li {list-style:none;}
 a {text-decoration:none; cursor:pointer; color:#222;}
 a:hover {color:#0181c8}
 caption, legend, .hidden {visibility:hidden; width:0px; height:0px; margin:0; padding:0; background:none; font-size:0; line-height:0; overflow:hidden;}
-:focus {outline:0;}
 fieldset	{border:0 none;}
 
 /*	Style	*/
@@ -22,6 +21,31 @@ fieldset	{border:0 none;}
 .rightSide	{float:right; text-align:right;}
 .wordBreakNormal	{word-break:normal;}
 .clear	{clear:both;}
+
+
+
+/*	header	*/
+header	{width:980px;margin:15px auto; height:40px; position:relative;}
+header h1	{float:left;}
+header h1 a	{font-size:16px; font-weight:bold;}
+.skipNav	{visibility:hidden; position:absolute; top:0; right:0;}
+.icoAlert	{background:#ee334e; color:#fff; font-size:11px;font-weight:bold; padding:0 5px; text-align:center;border-radius:50px; display:inline-block; zoom:1; *display:inline; line-height:16px; }
+
+
+/*	160118 TOP new	*/
+.topContainer	{float:right; text-align:right;}
+.timeContainer li	{display:inline-block;zoom:1; *display:inline;}
+.timeContainer .welcomeMap	{}
+.timeContainer .welcomeDate	{color:#0081c8;}
+.nameContainer li	{display:inline-block;zoom:1; *display:inline;}
+.nameContainer .welcomeAlert	{width:35px;}
+.nameContainer .welcomeName	{cursor:pointer; text-decoration:underline;width:380px;text-overflow:ellipsis; overflow:hidden; white-space:nowrap;}
+.logoutWrap	{margin-top:2px;font-size:13px; text-decoration:underline; padding-left:15px; margin-left:15px;background: url("https://ticketimage.pyeongchang2018.com/ctp/img/updateBg.gif") left 3px no-repeat;}
+
+
+
+
+
 
 
 
@@ -42,7 +66,7 @@ select::-ms-expand {display:none;}
 textarea	{resize:none; padding:5px; border:1px solid #949494; border-color:#949494 #d0d0d0 #d0d0d0 #949494;}
 .formText	{padding:0 5px; min-height:26px; background:#fff; border:1px solid #949494; border-color:#949494 #d0d0d0 #d0d0d0 #949494; line-height:26px;}
 .formText.disable	{background:#e4e4e4;}
-.formDropdown	{line-height:24px; height:28px; border:1px solid #949494; border-color:#949494 #d0d0d0 #d0d0d0 #949494; background:url("https://ticketimage.pyeongchang2018.com/ctp/img/input_select.gif") #fff 100% 50% no-repeat; padding-right:30px; padding-left:2px;}
+.formDropdown	{line-height:24px; height:28px; border:1px solid #949494; border-color:#949494 #d0d0d0 #d0d0d0 #949494; background:url("https://github.com/hejily/itpk/blob/master/img/input_select.gif?raw=true") #fff 100% 50% no-repeat; padding-right:30px; padding-left:2px;}
 .formDropdown	{padding-right:0\9; background:0 none\9;}
 input :: - ms-clear	{visibility:hidden; display:none;}
 
@@ -151,18 +175,11 @@ table.miniTable.type03 td	{padding:2px 5px;}
 
 
 
-/*	header	*/
-header	{width:980px;margin:15px auto; height:70px; position:relative;}
-header h1	{float:left;}
-.skipNav	{visibility:hidden; position:absolute; top:0; right:0;}
-.icoAlert	{background:#ee334e; color:#fff; font-weight:bold; padding:0 5px;border-radius:50px; display:inline-block; line-height:16px;zoom:1; *display:inline; }
-
-
 
 
 header .messageContainer	{float:right; margin-top:38px;}
 .messageContainer li	{display:inline-block;zoom:1; *display:inline; vertical-align:middle;}
-.messageContainer .icoAlert	{margin-right:5px; font-size:11px;}
+
 .messageContainer .welcomeMap	{font-size:12px; cursor:default}
 .messageContainer .welcomeDate	{margin-right:20px;color:#0081c8; cursor:default}
 .messageContainer .welcomeName	{font-size:13px; cursor:pointer; text-decoration:underline; text-align:right;}
@@ -171,14 +188,14 @@ header .messageContainer	{float:right; margin-top:38px;}
 .messageContainer li a.textBtn img	{margin-left:5px;}
 
 /*	navigation	*/
-nav	{clear:both;width:100%; background:url(https://ticketimage.pyeongchang2018.com/ctp/img/bg_gnb.jpg) #0060ad 50% 0% no-repeat; height:34px;}
+nav	{clear:both;width:100%; background:url("https://github.com/hejily/itpk/blob/master/img/bg_gnb.jpg?raw=true") #0060ad 50% 0% no-repeat; height:34px;}
 nav *	{-webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box;}
 nav a	{display:block; height:100%;}
 nav > ul	{width:980px; margin:0 auto; text-align:center; font-size:0;}
 nav > ul > li	{display:inline-block; zoom:1; *display:inline; position:relative; font-size:15px; height:34px; line-height:34px;}
 nav p a	{color:#fff; padding:0 38px;}
-nav ul li p.gnbHere a	{background:url(https://ticketimage.pyeongchang2018.com/ctp/img/btn_gnb_on.gif) 100% 100% no-repeat; color:#fff;}
-nav p a:hover,nav p.on a	{background:url(https://ticketimage.pyeongchang2018.com/ctp/img/bg_gnbover.gif) #004b84 0% 0% no-repeat;color:#fff;}
+nav ul li p.gnbHere a	{background:url("https://github.com/hejily/itpk/blob/master/img/btn_gnb_on.gif?raw=true") 100% 100% no-repeat; color:#fff;}
+nav p a:hover,nav p.on a	{background:url("https://github.com/hejily/itpk/blob/master/img/bg_gnbover.gif?raw=true") #004b84 0% 0% no-repeat;color:#fff;}
 nav ul li ul	{display:none;position:absolute; top:29px; left:0; background:#fff; box-shadow:3px 3px 3px #666; text-align:left;z-index:1; width:115%; padding:4px 0 23px 20px;}
 nav ul li ul li	{font-size:13px; line-height:12px; border-bottom:1px solid #ccc;}
 nav ul li ul li a	{padding-top:15px;}
@@ -206,7 +223,7 @@ nav ul li ul li a:hover	{color:#0081c8; font-weight:bold;}
 .formSelectWrap fieldset	{/*line-height:28px;*//*display:inline-block;zoom:1; *display:inline;*/ float:left;margin-right:10px; vertical-align:top; margin-bottom:10px;}
 .formSelectWrap label	{display:block;}
 .openmenuReset	{display:none;}
-.btnFiltermore	{position:absolute; bottom:7px;right:120px;/*clear:both;*/font-size:0px;/* width:334px; height:20px;*/ text-indent:-9999px;width:47px; height:14px;background:url(https://ticketimage.pyeongchang2018.com/ctp/img/btn_more.gif) 100% 0% no-repeat; cursor:pointer; /*margin:0 auto 20px;*/}
+.btnFiltermore	{position:absolute; bottom:7px;right:120px;/*clear:both;*/font-size:0px;/* width:334px; height:20px;*/ text-indent:-9999px;width:47px; height:14px;background:url("https://ticketimage.pyeongchang2018.com/ctp/img/btn_more.gif") 100% 0% no-repeat; cursor:pointer; /*margin:0 auto 20px;*/}
 .btnFiltermore.on	{background-position:100% 100%;}
 
 .openForm.line2.on	{height:66px;}
@@ -242,24 +259,6 @@ nav ul li ul li a:hover	{color:#0081c8; font-weight:bold;}
 
 
 
-/*	160118 TOP new	*/
-.topContainer	{float:right; text-align:right; margin-top:20px;}
-
-
-.timeContainer li	{margin-bottom:5px;display:inline-block;zoom:1; *display:inline;}
-.timeContainer .welcomeMap	{cursor:default}
-.timeContainer .welcomeDate	{color:#0081c8; cursor:default}
-
-header .nameContainer	{clear:both;float:right;}
-header .nameContainer *	{vertical-align:top;}
-.nameContainer li	{display:inline-block;zoom:1; *display:inline;}
-.nameContainer .icoAlert	{width:18px;font-size:11px; text-align:center;}
-.nameContainer .welcomeAlert	{width:35px; margin-top:3px;}
-.nameContainer .welcomeName	{font-size:13px; cursor:pointer; width:380px;text-decoration:underline;text-overflow:ellipsis; overflow:hidden; white-space:nowrap; margin-top:1px;}
-.nameContainer li a.textBtn	{height:18px; line-height:18px; border-radius:10px;}
-.nameContainer li a.textBtn img	{margin-left:5px;}
-
-.logoutWrap	{margin-top:2px;font-size:13px; text-decoration:underline; padding-left:15px; margin-left:15px;background: url("https://ticketimage.pyeongchang2018.com/ctp/img/updateBg.gif") left 3px no-repeat;}
 
 
 
@@ -277,7 +276,7 @@ header .nameContainer *	{vertical-align:top;}
 .gnbUserInfoBox .btnWrap	{text-align:right;font-size:13px; padding-top:11px; border-top:1px solid #d0d0d0; margin-top:15px;}
 .gnbUserInfoBox .btnWrap a	{text-decoration:underline; margin-left:20px;}
 .gnbUserInfoBox .btnWrap a:first-child	{visibility:hidden;}
-.welcomeAlert	{cursor:pointer;background:url(https://ticketimage.pyeongchang2018.com/ctp/img/img_alram.gif) no-repeat 8px 2px; padding-left:15px;}
+.welcomeAlert	{cursor:pointer;background:url("https://ticketimage.pyeongchang2018.com/ctp/img/img_alram.gif") no-repeat 8px 2px; padding-left:15px;}
 .gnbUserInfoBox.atpBoxWrap	{height:165px;}
 .gnbUserInfoBox.atpBoxWrap ul li	{height:40px;line-height:40px;}
 
@@ -501,7 +500,7 @@ padding:5px 15px;line-height:18px;vertical-align:middle;}
 
 
 /*	151217	*/
-.colorBgWrap	{background:url("https://ticketimage.pyeongchang2018.com/ctp/img/bg_home.jpg") #0096dc 50% 0% no-repeat; overflow:hidden;}
+.colorBgWrap	{background:url("https://github.com/hejily/itpk/blob/master/img/bg_home.jpg?raw=true") #0096dc 50% 0% no-repeat; overflow:hidden;}
 
 /*	tab	*/
 .tabWrap	{clear:both; width:980px; margin:20px auto 10px;border-bottom:1px solid #a8a8a8;}
@@ -573,8 +572,8 @@ user-select: none;
 .inputStyleWrap input + label {cursor:pointer; display:inline-block;zoom:1; *display:inline; position:relative;  -webkit-user-select:none;  -moz-user-select:none;  -ms-user-select:none;}
 .inputStyleWrap input + label:before {width:16px; height:16px; content: ' ';  display:inline-block;zoom:1; *display:inline; vertical-align: middle; line-height:16px; margin: -2px 5px 0 0;}
 
-.inputStyleWrap input[type="checkbox"] + label:before {background:url("https://ticketimage.pyeongchang2018.com/ctp/img/input_check.gif") 0% 0% no-repeat;}
-.inputStyleWrap input[type="radio"] + label:before {background:url("https://ticketimage.pyeongchang2018.com/ctp/img/input_radio.gif") 0% 0% no-repeat;}
+.inputStyleWrap input[type="checkbox"] + label:before {background:url("https://github.com/hejily/itpk/blob/master/img/input_check.gif?raw=true") 0% 0% no-repeat;}
+.inputStyleWrap input[type="radio"] + label:before {background:url("https://github.com/hejily/itpk/blob/master/img/input_radio.gif?raw=true") 0% 0% no-repeat;}
 .inputStyleWrap input[type="checkbox"]:checked + label:before {background-position:100% 100%}
 .inputStyleWrap input[type="radio"]:checked + label:before {background-position:100% 100%}
 
@@ -694,7 +693,7 @@ user-select: none;
 /*	160203 KOREAN	*/
 /*body.kr nav.ctpGnb p a	{padding:0 44px;}*/
 
-body.kr .btnFiltermore	{width:49px; background:url(https://ticketimage.pyeongchang2018.com/ctp/img/btn_more_kr.gif) 100% 0% no-repeat;}
+body.kr .btnFiltermore	{width:49px; background:url("https://ticketimage.pyeongchang2018.com/ctp/img/btn_more_kr.gif") 100% 0% no-repeat;}
 body.kr .btnFiltermore.on	{background-position:100% 100%;}
 
 
